@@ -1,10 +1,13 @@
 #include <iostream>
+#include <fstream>
 
 // declare a function pointer type
 typedef double (*Func1Ptr)(double, double);
 
 int main() {
-    uintptr_t func_addr = 12345678; // hard-coded address
+    std::ifstream file("func_addr.txt");
+    uintptr_t func_addr;
+    file >> func_addr;
 
     // convert the address to a function pointer
     Func1Ptr func_1 = reinterpret_cast<Func1Ptr>(func_addr);
