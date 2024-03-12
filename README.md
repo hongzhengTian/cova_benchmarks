@@ -1,7 +1,10 @@
-# cova_benchmarks_testing
+# cova_benchmarks
 
 ## BlurCanny
 
+* `hls_proj`
+  * All the vitis hls projects
+  * In each sub-directory, run `vitis_hls script.tcl`
 * `blur_canny_cvlib.py`
   * Both Gaussian blur and Canny edge detection are using CV library.
 * `blur_cupy_canny_cupy.py`
