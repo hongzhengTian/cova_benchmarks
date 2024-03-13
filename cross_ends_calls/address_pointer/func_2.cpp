@@ -9,6 +9,9 @@ int main() {
     uintptr_t func_addr;
     file >> func_addr;
 
+    // print the address
+    std::cout << "Function address: " << func_addr << std::endl;
+
     // convert the address to a function pointer
     Func1Ptr func_1 = reinterpret_cast<Func1Ptr>(func_addr);
 
