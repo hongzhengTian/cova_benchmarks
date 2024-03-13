@@ -1,2 +1,17 @@
-# ignore the 
+# ignore .vscode folder
+.vscode/
+
+# ignore the image folder
 ./ResNet18/imagenet-mini/
+
+# ignore any .log file
+*.log
+
+# ignore all the directories ans sub-directories starting with "hls_proj"
+hls_proj_*/
+
+# ignore __pycache__ folder
+__pycache__/
+
+# ignore .so file
+*.so
