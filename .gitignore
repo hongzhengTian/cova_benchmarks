@@ -15,3 +15,6 @@ __pycache__/
 
 # ignore .so file
 *.so
+
+# ignore all the directories and sub-directories starting with "pl_"
+pl_*/
