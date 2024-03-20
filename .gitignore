@@ -18,3 +18,12 @@ __pycache__/
 
 # ignore all the directories and sub-directories starting with "pl_"
 pl_*/
+
+# ignore .info file
+*.info
+
+# ignore .link_summary file
+*.link_summary
+
+# ignore .ltx file
+*.ltx

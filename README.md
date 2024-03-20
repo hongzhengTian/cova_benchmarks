@@ -54,3 +54,15 @@
 
     * Using `cffi` and called by C++.
       * It Works.
+
+## vecadd_hls
+
+  * Run VitisHLS synthesis and Vivado here to generate the `xclbin` file. Then PyLog (or CoVA) can deploy it on FPGA
+
+## cascade_gemm
+
+  * Implementing 3 cascaded gemm kernel as our first demo
+  * `cascade_gemm.py` is the ideal cova input program, and it should be used to generate the files:
+    * `cpu_kernel/gemm_0.py`
+    * `gpu_kernel/gemm_1.py`
+    * `fpga_kernel/gemm_2.cpp`
